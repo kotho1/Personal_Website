@@ -4,14 +4,15 @@ body {
     height: 100%;
 }
 
-.center_text {
+.name_prefix_text {
     margin: 0;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 10%;
+    left: 20%;
     transform: translate(-50%, -50%);
 
     color: white;
+    font-family: 'Futura';
 	font-size: 40px;
 	text-shadow: -1px 1px 0 #000,
 				  1px 1px 0 #000,
@@ -19,9 +20,26 @@ body {
 				-1px -1px 0 #000;
 }
 
+.name_text {
+    width: fit-content;
+    margin: 0;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+    font-family: 'Futura';
+	font-size: 80px;
+	text-shadow: -1px 1px 0 #000,
+				  1px 1px 0 #000,
+				 1px -1px 0 #000,
+				-1px -1px 0 #000;
+}
+
 .parallax {
-    background-image: url("IMG_2026.JPG");
-    height: 500px;
+    background-image: url("img/camera_hand.png");
+    height: 700px;
     position: relative;
     background-attachment: fixed;
     background-position: center;
@@ -30,16 +48,81 @@ body {
 }
 
 .resume {
-    height:500px;
     background-color: white;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.resume_item {
+    display: block;
+    width: 50%;
+    overflow: auto;
+    margin: 20px auto;
+}
+
+.resume_item_img {
+    float: left;
+    width: 33%;
+    border-radius: 15px;
+}
+
+.resume_item_info {
+    float: right;
+    width: 66%;
 }
 
 .art {
-    height:500px;
-    background-color: gray;
+    background-color: #DDD5D5;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-position: center;
+    background-size: contain;
+}
+
+.art_row {
+    width: 75%;
+    margin: auto;
+    overflow: auto;
+}
+
+.art_piece {
+    float: left;
+    width: 25%;
+    height: 75%;
+    overflow: auto;
+}
+
+.one {
+    background-image: url("img/proximity.jpg");
+}
+
+.two {
+    background-image: url("img/similarity.jpg");
+}
+
+.three {
+    background-image: url("img/skulls.jpg");
+}
+
+.four {
+    background-image: url("img/fig_ground.jpg");
 }
 
 .connect {
-    height:500px;
-    background-color: navy;
+    width: 100%;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.connect_row {
+    width: fit-content;
+    margin: auto;
+}
+
+.connect_row a {
+    margin-left: 20px;
+    margin-right: 20px;
 }
